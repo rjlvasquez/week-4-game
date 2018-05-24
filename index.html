@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" style="background-color:blue,white,red;">
+            <div class="container">
+                <h1 class: "text-center">
+                    <strong>Crystal Container</strong>
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Instructions</h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>
+                        <medium>Here is the game! This is where you will play most of the game! I hope you enjoy this!</medium>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- crystals and their scores -->
+        <div class="row">
+            <!-- the score -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Target Score</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="target-score"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="card-title text-center">My Score</h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="your-score"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- crystals -->
+            <div class="col-md-6">
+                <div class='card-mb-4'>
+                    <div class="card-header">
+                        <h3 class="card-title text-center">Select Crystal</h3>
+                    </div>
+                    <div id='crystals-container' class="card-body text-center">
+                        <img src="assets/images/blue.png" id="blue">
+                        <img src="assets/images/green.png" id="green">
+                        <img src="assets/images/grey.png" id="grey">
+                        <img src="assets/images/lime.png" id="lime">
+                    </div>
+                </div>
+            </div>
+            <!-- counting score -->
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">Win Count</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center" id="win-count">0</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <div class="card-header">
+                            <h3 class="card-title text-center">Loss Count</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center" id="loss-count">0</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
